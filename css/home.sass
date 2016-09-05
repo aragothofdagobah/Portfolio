@@ -1,0 +1,44 @@
+body
+  background-image: url("../images/background.jpeg")
+  background-size: cover
+  background-repeat: no-repeat
+.container
+  +outer-container
+  .menu-bar
+    position: fixed
+    top: 45%
+    left: 52%
+    transform: translate(-50%, -50%)
+    align-self: center
+    +size(350px)
+    text-align: center
+    background-image: url("../images/raised_fist.png")
+    filter: grayscale(100%)
+    background-repeat: no-repeat
+    background-size: contain
+
+    ul
+      padding-top: 350px
+      font-family: 'Forum', cursive
+
+
+      li
+        display: inline-flex
+        margin: 4px
+        font-size:  40px
+
+        a
+          color: black
+
+.Work
+  +size(100%)
+  background-color: black
+  display: none
+.About
+  +size(100%)
+  display: none
+  background-color: grey
+.Contact
+  +size(100%)
+  display: none
+  background-color: red

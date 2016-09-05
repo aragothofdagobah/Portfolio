@@ -1,0 +1,14 @@
+$(document).ready(function(){
+  $("#Work").click(function(){
+    $(".container").fadeOut();
+    $(".Work").fadeIn();
+  });
+  $("#About").click(function(){
+    $(".container").fadeOut();
+    $(".About").fadeIn();
+  });
+  $("#Contact").click(function(){
+    $(".container").fadeOut();
+    $(".Contact").fadeIn();
+  });
+});
