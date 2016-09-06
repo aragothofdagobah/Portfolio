@@ -246,21 +246,11 @@ body {
           color: black; }
 
 .Work {
-  height: 100%;
-  width: 100%;
-  background-color: black;
   display: none; }
 
 .About {
-  height: 100%;
-  width: 100%;
-  display: none;
-  background-color: grey; }
+  display: none; }
 
 .Contact {
-  height: 100%;
-  width: 100%;
-  display: none;
-  background-color: red; }
-
+  display: none; }
 /*# sourceMappingURL=style.css.map */
