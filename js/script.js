@@ -4,8 +4,8 @@ function autoHide(li) {
   $("#list").fadeOut();
   $(".menu-bar").animate({
         transform: '',
-        left: windowWidth - 50,
-        top: 50,
+        left: windowWidth-55,
+        top: 55,
         opacity: '0.5',
         height: '100px',
         width: '100px'

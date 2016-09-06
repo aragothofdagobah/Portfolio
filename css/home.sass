@@ -2,6 +2,7 @@ body
   background-image: url("../images/background.jpeg")
   background-size: cover
   background-repeat: no-repeat
+  overflow: hidden
 .container
   +outer-container
   .menu-bar
@@ -36,3 +37,19 @@ body
   display: none
 .Contact
   display: none
+
+.Header
+  text-align: center
+  font-weight: lighter
+  font-size: 100px
+  font-family: 'Forum', cursive
+  color: black
+
+.work-list
+  +outer-container
+
+.work-item
+  +size(100px)
+  background-color: black
+  +span-columns(3)
+  +omega(4n)
