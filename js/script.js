@@ -46,8 +46,7 @@ $(document).ready(function(){
     autoHide(this);
   });
   $('.menu-bar').click(function(){
-    if(onoff)
+    if($('.menu-bar').css('opacity') == '0.5')
       returnTo();
-    onoff=!onoff
   });
 });
