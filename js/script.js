@@ -1,5 +1,21 @@
 var windowHeight = $(window).height();
 var windowWidth = $(window).width();
+var onoff = false
+function returnTo(){
+  $("#list").fadeIn();
+  $(".Work").fadeOut();
+  $(".About").fadeOut();
+  $(".Contact").fadeOut();
+  $(".menu-bar").animate({
+    height: 350,
+    width: 350,
+    opacity: 1.0,
+    top: '45%',
+    left: '52%',
+    transform: 'translate(-50%, -50%)'
+  });
+}
+
 function autoHide(li) {
   $("#list").fadeOut();
   $(".menu-bar").animate({
@@ -28,5 +44,10 @@ $(document).ready(function(){
   });
   $("#Contact").click(function(){
     autoHide(this);
+  });
+  $('.menu-bar').click(function(){
+    if(onoff)
+      returnTo();
+    onoff=!onoff
   });
 });
