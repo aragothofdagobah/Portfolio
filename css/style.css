@@ -211,7 +211,7 @@ body {
   overflow: hidden; }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
   .container::after {
@@ -228,6 +228,7 @@ body {
         align-self: center;
     height: 350px;
     width: 350px;
+    max-width: 45%;
     text-align: center;
     background-image: url("../images/raised_fist.png");
     -webkit-filter: grayscale(100%);
@@ -256,6 +257,12 @@ body {
   display: none; }
 
 .Header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  max-width: 400px;
   text-align: center;
   font-weight: lighter;
   font-size: 100px;
@@ -272,17 +279,57 @@ body {
     display: block; }
 
 .work-item {
-  height: 100px;
-  width: 100px;
-  background-color: black;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%; }
+  width: 31.76157%;
+  max-width: 70%; }
   .work-item:last-child {
     margin-right: 0; }
-  .work-item:nth-child(4n) {
+  .work-item:nth-child(3n) {
     margin-right: 0; }
-  .work-item:nth-child(4n+1) {
+  .work-item:nth-child(3n+1) {
     clear: left; }
+  .work-item h4 {
+    margin: auto;
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+    max-width: 150px; }
+
+.about-us {
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  max-width: 500px;
+  padding: 20px;
+  margin: auto; }
+
+@media only screen and (orientation: portrait) {
+  body {
+    overflow: visible;
+    background-repeat: repeat-y; }
+    body .menu-bar li {
+      display: block;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding-left: 120px; }
+    body .About {
+      width: 100%; }
+      body .About .about-us {
+        font-size: 32px;
+        width: 900px; } }
+@media screen and (max-width: 1000px) {
+  .work-item {
+    float: left;
+    display: block;
+    margin-right: 10.1484%;
+    width: 430.4452%;
+    margin-left: 18.35807%;
+    padding: 35px; }
+    .work-item:last-child {
+      margin-right: 0; }
+    .work-item h4 {
+      font-size: 36px;
+      max-width: 100%; } }
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,12 @@
+$mobile: new-breakpoint(max-width 1000px 3)
+
 body
   background-image: url("../images/background.jpeg")
   background-size: cover
   background-repeat: no-repeat
   overflow: hidden
 .container
-  +outer-container
+  +outer-container(100%)
   .menu-bar
     position: fixed
     top: 45%
@@ -12,6 +14,7 @@ body
     transform: translate(-50%, -50%)
     align-self: center
     +size(350px)
+    max-width: 45%
     text-align: center
     background-image: url("../images/raised_fist.png")
     filter: grayscale(100%)
@@ -39,6 +42,12 @@ body
   display: none
 
 .Header
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 50px
+  border-radius: 20px
+  background-color: rgba(255, 255, 255, .7)
+  max-width: 400px
   text-align: center
   font-weight: lighter
   font-size: 100px
@@ -46,10 +55,53 @@ body
   color: black
 
 .work-list
-  +outer-container
+  +outer-container()
+  +media($mobile)
+
 
 .work-item
-  +size(100px)
-  background-color: black
-  +span-columns(3)
-  +omega(4n)
+  +span-columns(4)
+  +omega(3n)
+  max-width: 70%
+
+  h4
+    margin: auto
+    text-align: center
+    color: black
+    background-color: rgba(255, 255, 255, .4)
+    max-width: 150px
+
+
+.about-us
+  border-radius: 12px
+  background-color: rgba(255, 255, 255, .9)
+  color: black
+  max-width: 500px
+  padding: 20px
+  margin: auto
+
+@media only screen and (orientation: portrait)
+  body
+    overflow: visible
+    background-repeat: repeat-y
+    .menu-bar
+      li
+        display: block
+        width: 100%
+        background-color: rgba(255, 255, 255, .7)
+        padding-left: 120px
+    .About
+      width: 100%
+      .about-us
+        font-size: 32px
+        width: 900px
+
+.work-item
+  +media($mobile)
+    +span-columns(12)
+    +shift(.5)
+    padding: 35px
+
+    h4
+      font-size: 36px
+      max-width: 100%
