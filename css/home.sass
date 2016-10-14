@@ -17,6 +17,7 @@ body
     max-width: 45%
     text-align: center
     background-image: url("../images/raised_fist.png")
+    -webkit-filter: grayscale(100%)
     filter: grayscale(100%)
     background-repeat: no-repeat
     background-size: contain
@@ -63,13 +64,15 @@ body
   +span-columns(4)
   +omega(3n)
   max-width: 70%
+  cursor: pointer
+  margin-bottom: 10px
 
   h4
     margin: auto
     text-align: center
     color: black
     background-color: rgba(255, 255, 255, .4)
-    max-width: 150px
+    max-width: 250px
 
 
 .about-us
@@ -79,6 +82,13 @@ body
   max-width: 500px
   padding: 20px
   margin: auto
+
+  h1
+    text-align: center
+    font-weight: lighter
+  h2
+    text-align: center
+    font-weight: lighter
 
 @media only screen and (orientation: portrait)
   body

@@ -14,6 +14,7 @@ function returnTo(){
     left: '52%',
     transform: 'translate(-50%, -50%)'
   });
+  $('body').css("overflow", "hidden")
 }
 
 function autoHide(li) {
@@ -37,6 +38,8 @@ function autoHide(li) {
 
 $(document).ready(function(){
   $("#Work").click(function(){
+    $('body').css("overflow", "visible");
+    $('body').css("background-repeat", "repeat-y");
     autoHide(this);
   });
   $("#About").click(function(){
@@ -49,4 +52,9 @@ $(document).ready(function(){
     if($('.menu-bar').css('opacity') == '0.5')
       returnTo();
   });
+
+  for(var x = 0;x<works.projects.length;x++){
+    var image = works.projects[x].image
+    $('.work-list').append("<div id="+x+" class='work-item'><img src='"+image+"'/><h4>"+works.projects[x].name+"</h4></div>")
+  }
 });
