@@ -53,8 +53,13 @@ $(document).ready(function(){
       returnTo();
   });
 
+  $('.work-item').on('click', function(){
+    console.log("blah");
+
+  });
+
   for(var x = 0;x<works.projects.length;x++){
     var image = works.projects[x].image
-    $('.work-list').append("<div id="+x+" class='work-item'><img src='"+image+"'/><h4>"+works.projects[x].name+"</h4></div>")
+    $('.work-list').append("<div id="+x+" class='work-item'><a href='"+works.projects[x].link+"'target='_blank'><img src='"+image+"'/></a><h4>"+works.projects[x].name+"</h4></div>")
   }
 });
