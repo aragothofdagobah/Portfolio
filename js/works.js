@@ -3,7 +3,7 @@ var works = {
 	{
 	  "name" : "Why Lemons?",
 	  "link" : "https://aragothofdagobah.github.io/lemons",
-	  "image": "images/lemon",
+	  "image": "images/lemon.png",
 	  "skills":["HTML", "SASS","jQuery","Javascript","Bourbon","CSS3 animations"],
 	  "blurb" : "A little fact generator about lemons with nice CSS animations"
 	},
