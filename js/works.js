@@ -1,5 +1,12 @@
 var works = {
   "projects" : [
+	{
+	  "name" : "Why Lemons?",
+	  "link" : "https://aragothofdagobah.github.io/lemons",
+	  "image": "images/lemon",
+	  "skills":["HTML", "SASS","jQuery","Javascript","Bourbon","CSS3 animations"],
+	  "blurb" : "A little fact generator about lemons with nice CSS animations"
+	},
     {
       "name" : "ABC Creations",
       "link" : "https://aragothofdagobah.github.io/ABC-Creations/",
@@ -57,4 +64,4 @@ var works = {
       "blurb" : "This is a demo mock up of a blog using Twitters Bootstrap framework and jQuery animations"
     }
   ]
-}
+};
